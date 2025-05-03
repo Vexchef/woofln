@@ -1,4 +1,5 @@
 import discord
+import time, requests
 import random
 from discord import app_commands
 from datetime import datetime, timedelta
@@ -8,7 +9,12 @@ from discord.ext import commands
 random_cooldowns: Dict[int, datetime] = {}
 answer_cooldowns: Dict[int, datetime] = {}
 
+def keep_alive():
+    while True:
+        time.sleep(300)  # Ping every 5 minutes
+        requests.get("https://google.com")
 
+Thread(target=keep_alive).start()
 def cooldown_check(cooldown_dict: Dict[int, datetime]):
 
     def predicate(
