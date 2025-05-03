@@ -12,10 +12,10 @@ answer_cooldowns: Dict[int, datetime] = {}
 
 def keep_alive():
     while True:
-        time.sleep(300)  # Ping every 5 minutes
+        time.sleep(300)
         requests.get("https://google.com")
 
-Thread(target=keep_alive).start()
+Thread(target=keep_alive, daemon=True).start()
 def cooldown_check(cooldown_dict: Dict[int, datetime]):
 
     def predicate(
