@@ -10,18 +10,6 @@ from discord.ext import commands
 random_cooldowns: Dict[int, datetime] = {}
 answer_cooldowns: Dict[int, datetime] = {}
 
-def keep_alive():
-    while True:
-        try:
-            time.sleep(300)  # Ping every 5 minutes
-            requests.get("https://google.com")  # Replace with any URL
-        except:
-            pass  # Prevents crashes from failed requests
-
-# 2. THREAD INITIALIZATION (Critical Fix)
-if __name__ == "__main__":
-    Thread(target=keep_alive, daemon=True).start()  # daemon=True prevents hangs
-
 def cooldown_check(cooldown_dict: Dict[int, datetime]):
 
     def predicate(
