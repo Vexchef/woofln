@@ -1,5 +1,4 @@
 import discord
-from threading import Thread
 import time, requests
 import random
 from discord import app_commands
@@ -52,21 +51,57 @@ REPORT_CHANNEL_ID = 1368186794805559376
 MENTION_MESSAGES = [
     "Did you know the first video game easter egg was in *Adventure* (1980)?",
     "Fun fact: Creepers in Minecraft were a coding error.",
-    "Summoned like a Final Fantasy summon—what's the mission?",
+    "Summoned like a Final Fantasy summon—what’s the mission?",
     "Press 'A' to interact... oh wait, I already did.",
     "I respond faster than a speedrunner skipping dialogue.",
-    "Ever heard of the Konami Code? Up up down down... never mind.",
+    "Ever heard of the Konami Code? Up up down down… never mind.",
     "Respawned just to answer your call!",
     "Warning: low on mana, but high on motivation!",
     "Pro tip: Pinging the bot gives you +10 charisma (temporarily).",
-    "I've joined the party. Time to roll initiative?"
+    "I've joined the party. Time to roll initiative?",
+    "Loading lore... Did you know Tetris was invented by a Russian scientist?",
+    "Achievement unlocked: You Got My Attention!",
+    "I come with patch notes and fun facts.",
+    "Bot activated. Please don’t forget to save your game.",
+    "Just like in Dark Souls: You Died. (But I'm here now!)",
+    "You're the player. I'm just the narrator.",
+    "Heads up: Ping responsibly—bots have cooldowns too!",
+    "You’ve entered dialogue mode. Choose your next words wisely.",
+    "In another timeline, I was the final boss.",
+    "Ping accepted. Quest updated!",
+    "Did someone say ‘adventure’? Because I’m ready!",
+    "Legend says I respond only to true heroes… Looks like it worked!",
+    "According to ancient code, this ping was foretold.",
+    "Inventory full—but I made space for this message.",
+    "System online. Let the games begin!"
 ]
 
 REPLY_ANSWERS = [
-    "the stars say yes!", "my magic 8-ball says no.",
-    "that only time will tell.", "absolutely, without a doubt!",
-    "I wouldn't count on it.", "the answer is blowing in the wind.",
-    "yes, but with consequences.", "please don't ask me, I'm just a bot."
+    "The stars say yes!",
+    "My magic 8-ball says no.",
+    "Only time will tell.",
+    "Absolutely, without a doubt!",
+    "I wouldn't count on it.",
+    "The answer is blowing in the wind.",
+    "Yes, but with consequences.",
+    "Don’t ask me, I’m just a bot.",
+    "Try again later.",
+    "Signs point to yes.",
+    "It's a mystery even to me.",
+    "No way—like, zero chance.",
+    "If you believe hard enough… maybe?",
+    "Absolutely not, and I'm sorry.",
+    "You already know the answer.",
+    "In your dreams.",
+    "Ask again when the moon is full.",
+    "Highly probable!",
+    "There’s a glitch in the matrix… unclear.",
+    "You may rely on it.",
+    "It's written in the code: yes.",
+    "Ask again after coffee.",
+    "It’s not looking good.",
+    "Odds are favorable.",
+    "42—that’s all I can say."
 ]
 
 
